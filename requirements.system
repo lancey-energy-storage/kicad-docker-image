@@ -1,0 +1,23 @@
+build-essential
+git
+aptitude
+apt-utils
+libbz2-dev
+bzr
+cmake
+make
+doxygen
+swig
+python-wxgtk3.0* python-wxtools libwxgtk3.0-dev libgtk-3-dev
+openssl
+libboost-all-dev
+libglew-dev
+libglm-dev
+libghc-glut-dev
+libssl-dev
+libcairo2-dev
+python
+python-pip
+libcurl4-openssl-dev
+liboce-foundation-dev
+wget
