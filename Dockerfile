@@ -29,7 +29,8 @@ RUN cd kicad-source-mirror && \
 
 RUN cd kicad-source-mirror/build && \
 		make all && \
-  	make install
+  	make install && \
+		rm -rf kicad-source-mirror
 
 # Tell ldconfig to search in the right folder for shared libraries
 
