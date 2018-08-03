@@ -28,7 +28,7 @@ RUN cd kicad-source-mirror && \
 # Compile
 
 RUN cd kicad-source-mirror/build && \
-		make all && \
+		make  && \
   	make install && \
 		rm -rf kicad-source-mirror
 
