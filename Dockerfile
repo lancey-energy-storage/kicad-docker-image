@@ -12,9 +12,9 @@ RUN apt-get update && \
 # Retrieve the code
 
 RUN cd && \
-		wget https://api.github.com/repos/KiCad/kicad-source-mirror/tarball/4.0.7 && \
-		tar -xzf 4.0.7 && \
-		mv ./KiCad-kicad-source-mirror-a29ab39 ./kicad-source-mirror
+		wget https://api.github.com/repos/KiCad/kicad-source-mirror/tarball/5.0.0 && \
+		tar -xzf 5.0.0 && \
+		mv ./KiCad-kicad-source-mirror-fee4fd1 ./kicad-source-mirror
 
 
 # Create Makefile
@@ -28,9 +28,9 @@ RUN cd kicad-source-mirror && \
 # Compile
 
 RUN cd kicad-source-mirror/build && \
-		make  && \
+		make all && \
   	make install && \
-		rm -rf kicad-source-mirror
+		rm -rf kicad-source-mirror 
 
 # Tell ldconfig to search in the right folder for shared libraries
 
