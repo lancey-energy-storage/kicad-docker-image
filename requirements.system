@@ -2,8 +2,6 @@ build-essential
 git
 aptitude
 apt-utils
-libbz2-dev
-bzr
 cmake
 make
 doxygen
