@@ -15,7 +15,7 @@ libghc-glut-dev
 libssl-dev
 libcairo2-dev
 python
-python-pip
+python-pip python3-pip
 libcurl4-openssl-dev
 liboce-foundation-dev
 wget
