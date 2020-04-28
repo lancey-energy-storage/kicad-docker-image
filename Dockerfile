@@ -13,9 +13,9 @@ RUN apt-get update && \
 	cat ./requirements.build | xargs apt-get install -y
 
 # Retrieve code
-RUN wget https://api.github.com/repos/KiCad/kicad-source-mirror/tarball/5.1.3 && \
-	tar -xzf 5.1.3 && \
-	mv ./KiCad-kicad-source-mirror-ffb9f22 ./kicad-source
+RUN wget https://api.github.com/repos/KiCad/kicad-source-mirror/tarball/5.1.5 && \
+	tar -xzf 5.1.5 && \
+	mv ./KiCad-kicad-source-mirror-52549c5 ./kicad-source
 
 # Create Makefile
 RUN mkdir -p kicad-source/build/ && \
