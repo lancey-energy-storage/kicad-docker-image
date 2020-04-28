@@ -13,9 +13,9 @@ RUN apt-get update && \
 	cat ./requirements.build | xargs apt-get install -y
 
 # Retrieve code
-RUN wget https://api.github.com/repos/KiCad/kicad-source-mirror/tarball/5.1.2 && \
-	tar -xzf 5.1.2 && \
-	mv ./KiCad-kicad-source-mirror-f72e74a ./kicad-source
+RUN wget https://api.github.com/repos/KiCad/kicad-source-mirror/tarball/5.1.3 && \
+	tar -xzf 5.1.3 && \
+	mv ./KiCad-kicad-source-mirror-ffb9f22 ./kicad-source
 
 # Create Makefile
 RUN mkdir -p kicad-source/build/ && \
@@ -51,4 +51,3 @@ RUN ln -s /usr/bin/python2.7 /usr/bin/python && \
 
 # Default command
 CMD ["bash"]
-
